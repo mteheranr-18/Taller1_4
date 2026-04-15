@@ -8,6 +8,18 @@ package taller1_4;
  *
  * @author Miguel
  */
-public class ClaseCoche {
-    
+class Coche {
+    public String marca;
+    public String modelo;
+    static int contadorCoches = 0;
+
+    public Coche(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+        contadorCoches++;
+    }
+
+    public static void mostrarCantidad() {
+        System.out.println("Total de coches: " + contadorCoches);
+    }
 }

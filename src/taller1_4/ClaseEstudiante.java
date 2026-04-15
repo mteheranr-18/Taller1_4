@@ -8,6 +8,27 @@ package taller1_4;
  *
  * @author Miguel
  */
-public class ClaseEstudiante {
-    
+class Estudiante {
+    String nombre;
+    int edad;
+    String curso;
+
+    public Estudiante() {
+        this("Sin nombre", 0);
+        this.curso = "No asignado";
+    }
+
+    public Estudiante(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    public Estudiante(String nombre, int edad, String curso) {
+        this(nombre, edad);
+        this.curso = curso;
+    }
+
+    public void mostrarEstudiante() {
+        System.out.println(nombre + ", " + edad + " años, Curso: " + curso);
+    }
 }

@@ -9,5 +9,9 @@ package taller1_4;
  * @author Miguel
  */
 class Calculadora {
+
+    static String suma(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
